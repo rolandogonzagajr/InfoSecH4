@@ -16,8 +16,36 @@
         </div>
         <div class="content">
             <h1 class="content">Schneier 2015: Applied Cryptography: 2.3 One-Way Functions and 2.4 One-Way Hash Functions</h1>
-<p>These are some basic security practices everyone should folow: </p>
-    <h1>Disobey 2018 - Phishing through Email by Niklas Särökaari</h1>
+            <p>In Bruce Schneier's book "Applied Cryptography" (2015), the following important concepts are explained about one-way functions and one-way hash functions:</p>
+<h2>One-Way Functions</h2>
+    <p>
+        One-way functions are like puzzles that are easy to solve in one direction but nearly impossible to solve in reverse.
+    </p>
+    <ul>
+        <li>Think of it as breaking a plate into pieces, which is simple, but putting the pieces back together to form a complete plate is very hard.</li>
+        <li>While we don't have absolute mathematical proof that one-way functions exist, many real-world functions behave this way.</li>
+    </ul>
+
+    <h2>One-Way Hash Functions</h2>
+    <p>
+        One-way hash functions take any length of data and produce a fixed-size code, much like condensing a big story into a short summary.
+    </p>
+    <ul>
+        <li>They are designed to make it easy to create this code from the data but extremely difficult to figure out the original data from the code.</li>
+        <li>A good one-way hash function ensures that it's very unlikely for two different pieces of data to produce the same code.</li>
+    </ul>
+
+    <h2>Message Authentication Codes (MACs)</h2>
+    <p>
+        MACs are like secret handshakes for data. They use a one-way hash function and a secret key to ensure data is both genuine and unchanged.
+    </p>
+    <ul>
+        <li>Only people who know the secret handshake (the key) can verify that the data hasn't been tampered with.</li>
+        <li>MACs are valuable for confirming that messages or information haven't been altered during transmission.</li>
+    </ul>
+
+    <p><strong>Reference:</strong> Schneier, B. (2015). Applied Cryptography: Protocols, Algorithms, and Source Code in C. Wiley.</p>    
+            <h1>Disobey 2018 - Phishing through Email by Niklas Särökaari</h1>
 
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/m9YFJGSHYtY" frameborder="0" allowfullscreen></iframe>
 
